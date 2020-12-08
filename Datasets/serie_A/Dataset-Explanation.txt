@@ -1,0 +1,186 @@
+Notes for Football Data
+
+All data is in csv format, ready for use within standard spreadsheet applications. Please note that some abbreviations are no longer in use (in particular odds from specific bookmakers no longer used) and refer to data collected in earlier seasons. For a current list of what bookmakers are included in the dataset please visit http://www.football-data.co.uk/matches.php
+
+
+### Data considered for the classification
+FTR = Full Time Result. 2 versions are available (H=Home Win, D=Draw, A=Away Win) or (H=Home Win, NH=Home not Win)
+HTP  = Home Team Points. The value is also scaled in a range [0,1]
+ATP  = Away Team Points. The value is also scaled in a range [0,1]
+HM1 = Home Match results from the previous week
+HM2 = Home Match results from the previous 2 weeks
+HM3 = Home Match results from the previous 3 weeks
+AM1 = Away Match results from the previous week
+AM2 = Away Match results from the previous 2 weeks
+AM3 = Away Match results from the previous 3 weeks
+HTGD = Home Team Goal Difference (HTGS - HTGC) in a given week. The value is also scaled in a range [0,1]
+ATGD = Away Team Goal Difference (ATGS - ATGC) in a given week. The value is also scaled in a range [0,1]
+DiffFormPts = HTFormPts - ATFormPts. The value is also scaled in a range [0,1]
+DiffLP = HomeTeamLP - AwayTeamLP
+
+
+### ALL DATA INFO
+
+Features
+HTGS = Home Team Goal Scored (cumulated)
+ATGS = Away Team Goal Scored (cumulated)Ø
+HTGC = Home Team Goal Conceded (cumulated)
+ATGC = Away Team Goal Conceded (cumulated)
+HTP  = Home Team Points. The value is also scaled in a range [0,1]
+ATP  = Away Team Points. The value is also scaled in a range [0,1]
+HomeTeamLP = Home Team Points at the end of the year
+AwayTeamLP = Away Team Points at the end of the year
+MW = Match Week
+HM1 = Home Match results from the previous week
+HM2 = Home Match results from the previous 2 weeks
+HM3 = Home Match results from the previous 3 weeks
+HM4 = Home Match results from the previous 4 weeks
+HM5 = Home Match results from the previous 5 weeks
+AM1 = Away Match results from the previous week
+AM2 = Away Match results from the previous 2 weeks
+AM3 = Away Match results from the previous 3 weeks
+AM4 = Away Match results from the previous 4 weeks
+AM5 = Away Match results from the previous 5 weeks
+HTFormPtsStr = combined HM1+HM2+HM3+HM4+HM5
+ATFormPtsStr = combined AM1+AM2+AM3+AM4+AM5
+HTFormPts = HTFormPtsStr converted into a score
+ATFormPts = ATFormPtsStr converted into a score
+FTR = Full Time Result. 2 versions are available (H=Home Win, D=Draw, A=Away Win) or (H=Home Win, NH=Home not Win)
+HTWinStreak3 = 1 if the Home Team wins 3 matches in a row
+HTWinStreak5 = 1 if the Home Team wins 5 matches in a row
+ATWinStreak3 = 1 if the Away Team wins 3 matches in a row
+ATWinStreak5 = 1 if the Away Team wins 5 matches in a row
+HTLossStreak3 = 1 if the Home Team looses 3 matches in a row
+HTLossStreak5 = 1 if the Home Team looses 5 matches in a row
+ATLossStreak3 = 1 if the Away Team looses 3 matches in a row
+ATLossStreak5 = 1 if the Away Team looses 5 matches in a row
+HTGD = Home Team Goal Difference (HTGS - HTGC) in a given week. The value is also scaled in a range [0,1]
+ATGD = Away Team Goal Difference (ATGS - ATGC) in a given week. The value is also scaled in a range [0,1]
+DiffPts = Home Team Points - Away Team Points. The value is also scaled in a range [0,1]
+DiffFormPts = HTFormPts - ATFormPts. The value is also scaled in a range [0,1]
+DiffLP = HomeTeamLP - AwayTeamLP
+
+
+Notes for Football Data
+
+All data is in csv format, ready for use within standard spreadsheet applications. Please note that some abbreviations are no longer in use (in particular odds from specific bookmakers no longer used) and refer to data collected in earlier seasons. For a current list of what bookmakers are included in the dataset please visit http://www.football-data.co.uk/matches.php
+
+Key to results data:
+
+Div = League Division
+Date = Match Date (dd/mm/yy)
+HomeTeam = Home Team
+AwayTeam = Away Team
+FTHG and HG = Full Time Home Team Goals
+FTAG and AG = Full Time Away Team Goals
+FTR and Res = Full Time Result (H=Home Win, D=Draw, A=Away Win)
+HTHG = Half Time Home Team Goals
+HTAG = Half Time Away Team Goals
+HTR = Half Time Result (H=Home Win, D=Draw, A=Away Win)
+
+Match Statistics (where available)
+Attendance = Crowd Attendance
+Referee = Match Referee
+HS = Home Team Shots
+AS = Away Team Shots
+HST = Home Team Shots on Target
+AST = Away Team Shots on Target
+HHW = Home Team Hit Woodwork
+AHW = Away Team Hit Woodwork
+HC = Home Team Corners
+AC = Away Team Corners
+HF = Home Team Fouls Committed
+AF = Away Team Fouls Committed
+HO = Home Team Offsides
+AO = Away Team Offsides
+HY = Home Team Yellow Cards
+AY = Away Team Yellow Cards
+HR = Home Team Red Cards
+AR = Away Team Red Cards
+HBP = Home Team Bookings Points (10 = yellow, 25 = red)
+ABP = Away Team Bookings Points (10 = yellow, 25 = red)
+
+Key to 1X2 (match) betting odds data:
+
+B365H = Bet365 home win odds
+B365D = Bet365 draw odds
+B365A = Bet365 away win odds
+BWH = Bet&Win home win odds
+BWD = Bet&Win draw odds
+BWA = Bet&Win away win odds
+IWH = Interwetten home win odds
+IWD = Interwetten draw odds
+IWA = Interwetten away win odds
+LBH = Ladbrokes home win odds
+LBD = Ladbrokes draw odds
+LBA = Ladbrokes away win odds
+PSH and PH = Pinnacle home win odds
+PSD and PD = Pinnacle draw odds
+PSA and PA = Pinnacle away win odds
+VCH = VC Bet home win odds
+VCD = VC Bet draw odds
+VCA = VC Bet away win odds
+WHH = William Hill home win odds
+WHD = William Hill draw odds
+WHA = William Hill away win odds
+
+Bb1X2 = Number of BetBrain bookmakers used to calculate match odds averages and maximums
+BbMxH = Betbrain maximum home win odds
+BbAvH = Betbrain average home win odds
+BbMxD = Betbrain maximum draw odds
+BbAvD = Betbrain average draw win odds
+BbMxA = Betbrain maximum away win odds
+BbAvA = Betbrain average away win odds
+
+
+Key to total goals betting odds:
+
+BbOU = Number of BetBrain bookmakers used to calculate over/under 2.5 goals (total goals) averages and maximums
+BbMx>2.5 = Betbrain maximum over 2.5 goals
+BbAv>2.5 = Betbrain average over 2.5 goals
+BbMx<2.5 = Betbrain maximum under 2.5 goals
+BbAv<2.5 = Betbrain average under 2.5 goals
+
+GB>2.5 = Gamebookers over 2.5 goals
+GB<2.5 = Gamebookers under 2.5 goals
+B365>2.5 = Bet365 over 2.5 goals
+B365<2.5 = Bet365 under 2.5 goals
+
+
+Key to Asian handicap betting odds:
+
+BbAH = Number of BetBrain bookmakers used to Asian handicap averages and maximums
+BbAHh = Betbrain size of handicap (home team)
+BbMxAHH = Betbrain maximum Asian handicap home team odds
+BbAvAHH = Betbrain average Asian handicap home team odds
+BbMxAHA = Betbrain maximum Asian handicap away team odds
+BbAvAHA = Betbrain average Asian handicap away team odds
+
+
+Closing odds (last odds before match starts)
+
+PSCH = Pinnacle closing home win odds
+PSCD = Pinnacle closing draw odds
+PSCA = Pinnacle closing away win odds
+
+Football-Data would like to acknowledge the following sources which have been utilised in the compilation of Football-Data's results and odds files.
+
+Historical results:
+International Soccer Server - http://sunsite.tut.fi/rec/riku/soccer.html
+European Football - http://www.eurofootball.be/
+RSSSF Archive - http://www.rsssf.com/
+
+Current results (full time, half time)
+TBWSport - http://www.tbwsport.com
+Livescore- http://www.livescore.com
+
+Match statistics
+Sportinglife, ESPN Soccer, Bundesliga.de, Gazzetta.it and Football.fr
+
+Bookmakers betting odds
+Betbrain - http://www.betbrain.com
+Betbase - http://www.betbase.info
+
+Betting odds for weekend games are collected Friday afternoons, and on Tuesday afternoons for midweek games.
+
+Additional match statistics (corners, shots, bookings, referee etc.) for the 2000/01 and 2001/02 seasons for the English, Scottish and German leagues were provided by Sports.com (now under new ownership and no longer available).

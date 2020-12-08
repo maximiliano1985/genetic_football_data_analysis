@@ -1,0 +1,11 @@
+,Date,HomeTeam,AwayTeam,Exact_res,Bet365,Forebet,Predictions,Pred_prob_H,Pred_prob_D,Pred_prob_A,Std_H,Std_D,Std_A
+3178,2017-12-01,Roma,Spal,,H,H,H,78%,21%,2%,0.14,0.12,0.04
+3179,2017-12-01,Napoli,Juventus,,H,H,H,94%,6%,0%,0.05,0.04,0.01
+3180,2017-12-02,Torino,Atalanta,,H,D,H,48%,46%,6%,0.14,0.13,0.05
+3181,2017-12-03,Benevento,Milan,,A,A,A,0%,30%,69%,0.01,0.07,0.07
+3182,2017-12-03,Inter,Chievo,,H,H,H,93%,6%,0%,0.06,0.05,0.01
+3183,2017-12-03,Fiorentina,Sassuolo,,H,H,H,56%,39%,5%,0.20,0.17,0.05
+3184,2017-12-03,Bologna,Cagliari,,H,H,D,43%,45%,12%,0.21,0.16,0.11
+3185,2017-12-03,Sampdoria,Lazio,,A,A,D,32%,55%,13%,0.19,0.10,0.10
+3186,2017-12-04,Crotone,Udinese,,H,H,D,24%,62%,14%,0.12,0.07,0.09
+3187,2017-12-04,Verona,Genoa,,A,A,D,15%,63%,22%,0.13,0.09,0.13

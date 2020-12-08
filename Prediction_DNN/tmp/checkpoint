@@ -1,0 +1,2 @@
+model_checkpoint_path: "football_classifier_serieA_DNN_extended9"
+all_model_checkpoint_paths: "football_classifier_serieA_DNN_extended9"
